@@ -22,6 +22,7 @@ app.use(
       'https://chatflow-chat-studio.vercel.app',
       'https://chatflow-chat-studio-git-main-kyachingprue-marmas-projects.vercel.app',
       'https://chatflow-chat-studio-dxd557i5v-kyachingprue-marmas-projects.vercel.app',
+      'https://chatflow-chat-studio-kv8252cpj-kyachingprue-marmas-projects.vercel.app', 
     ],
     credentials: true,
   })
@@ -37,6 +38,7 @@ const io = new Server(server, {
       'https://chatflow-chat-studio.vercel.app',
       'https://chatflow-chat-studio-git-main-kyachingprue-marmas-projects.vercel.app',
       'https://chatflow-chat-studio-dxd557i5v-kyachingprue-marmas-projects.vercel.app',
+      'https://chatflow-chat-studio-kv8252cpj-kyachingprue-marmas-projects.vercel.app', 
     ],
     credentials: true,
   },
