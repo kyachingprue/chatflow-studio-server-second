@@ -146,8 +146,8 @@ async function run() {
 
       res.cookie('token', token, {
         httpOnly: true,
-        secure: false,
-        sameSite: 'lax',
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
       });
 
       res.send({ success: true });
@@ -157,8 +157,8 @@ async function run() {
     app.post('/logout', (req, res) => {
       res.clearCookie('token', {
         httpOnly: true,
-        secure: false,
-        sameSite: 'lax',
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
       });
 
       res.send({ success: true });
