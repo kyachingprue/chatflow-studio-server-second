@@ -31,7 +31,11 @@ app.use(cookieParser());
 // 🔥 NEW — Socket.IO setup
 const io = new Server(server, {
   cors: {
-    origin: ['http://localhost:5173'],
+    origin: [
+      'http://localhost:5173',
+      'https://chatflow-chat-studio-git-main-kyachingprue-marmas-projects.vercel.app',
+      'https://chatflow-chat-studio-dxd557i5v-kyachingprue-marmas-projects.vercel.app',
+    ],
     credentials: true,
   },
 });
