@@ -19,7 +19,7 @@ app.use(
   cors({
     origin: [
       'http://localhost:5173',
-      'https://chatflow-chat-studio.vercel.app',
+      'https://chatflow-chat-studio-git-main-kyachingprue-marmas-projects.vercel.app',
     ],
     credentials: true,
   })
